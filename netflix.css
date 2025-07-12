@@ -609,67 +609,471 @@ body{
     animation: textGlow 1s ease-in-out infinite;
 }
 
-/* Responsive Design */
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Tablets and Small Laptops */
+@media (max-width: 1024px) {
+    .headingsection {
+        padding: 0 4rem;
+    }
+    
+    .maincontentsectioncontainer {
+        width: 80%;
+    }
+    
+    .maincontentsectioncontainer h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .trendingsection,
+    .reasonssection,
+    .faqsection,
+    .footersection {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
-    .maincontainer {
-        padding: 0.3rem 2rem;
+    .headingsection {
+        padding: 0 2rem;
+        height: 70px;
+    }
+    
+    .leftheadingsection img {
+        height: 60px;
+        width: 150px;
+    }
+    
+    .rightheadsectioncontainer {
+        gap: 8px;
+        margin-right: 0.5rem;
+    }
+    
+    .languagebox {
+        padding: 0.2rem 0.2rem;
+        font-size: 12px;
+    }
+    
+    .signinbutton {
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .signinbutton button {
+        font-size: 12px;
+    }
+    
+    .maincontentsection {
+        height: 80vh;
+        margin-top: 20px;
     }
     
     .maincontentsectioncontainer {
         width: 90%;
+        height: 70%;
+        gap: 12px;
     }
     
     .maincontentsectioncontainer h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .maincontentsectioncontainerpp {
+        font-size: 18px;
+    }
+    
+    .maincontentsectioncontainerppp {
+        font-size: 14px;
+        margin-top: 15px;
     }
     
     .maincontentsectioninput {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     
     .maincontentsectioninput input,
     .maincontentsectioninput button {
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
+        height: 45px;
+    }
+    
+    .maincontentsectioninput button {
+        font-size: 18px;
+    }
+    
+    .trendingsection {
+        padding: 0 2rem;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .trendingsection .text {
+        font-size: 18px;
+        margin-left: 10px;
     }
     
     .trendingsectioncards {
-        gap: 20px;
+        gap: 15px;
+        justify-content: center;
     }
     
     .trendingsectioncards img {
-        width: 150px;
-        height: 225px;
+        width: 140px;
+        height: 210px;
+    }
+    
+    .reasonssection {
+        padding: 20px 2rem;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .reasonheading {
+        font-size: 18px;
+        margin-left: 10px;
     }
     
     .reasoncards {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
     }
     
     .card11, .card12, .card13, .card14 {
         width: 100%;
         max-width: 400px;
-        margin-left: 0;
         height: auto;
-        min-height: 200px;
+        min-height: 220px;
+        margin: 0;
+    }
+    
+    .card1 {
+        font-size: 20px;
+    }
+    
+    .card2 {
+        font-size: 13px;
+    }
+    
+    .card1img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .faqsection {
+        padding: 20px 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .faqheading {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    
+    .faqcard1, .faqcard2, .faqcard3, .faqcard4, .faqcard5, .faqcard6 {
+        height: 70px;
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    
+    .footersection {
+        padding: 20px 2rem;
+        gap: 30px;
+    }
+    
+    .footer1 {
+        font-size: 14px;
     }
     
     .footer2 {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        line-height: 30px;
+    }
+    
+    .footer2 > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .footer3 .languagebox {
+        font-size: 18px;
     }
 }
 
+/* Mobile Phones */
 @media (max-width: 480px) {
-    .maincontainer {
-        padding: 0.3rem 1rem;
+    .headingsection {
+        padding: 0 1rem;
+        height: 60px;
+    }
+    
+    .leftheadingsection img {
+        height: 50px;
+        width: 120px;
+    }
+    
+    .rightheadsectioncontainer {
+        gap: 5px;
+        margin-right: 0;
+    }
+    
+    .languagebox {
+        padding: 0.15rem 0.15rem;
+        font-size: 10px;
+        gap: 5px;
+    }
+    
+    .languageboxicon {
+        height: 16px;
+        width: 16px;
+    }
+    
+    .signinbutton {
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .signinbutton button {
+        font-size: 10px;
+    }
+    
+    .maincontentsection {
+        height: 70vh;
+        margin-top: 15px;
+    }
+    
+    .maincontentsectioncontainer {
+        width: 95%;
+        height: 80%;
+        gap: 10px;
+        padding: 5px 10px;
     }
     
     .maincontentsectioncontainer h1 {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    .maincontentsectioncontainerpp {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .maincontentsectioncontainerppp {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .maincontentsectioninput {
+        gap: 10px;
+    }
+    
+    .maincontentsectioninput input,
+    .maincontentsectioninput button {
+        max-width: 280px;
+        height: 40px;
+    }
+    
+    .maincontentsectioninput input {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+    
+    .maincontentsectioninput input::placeholder {
+        font-size: 14px;
+    }
+    
+    .maincontentsectioninput button {
+        font-size: 16px;
+    }
+    
+    .trendingsection {
+        padding: 0 1rem;
+        gap: 20px;
+    }
+    
+    .trendingsection .text {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    
+    .trendingsectioncards {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .trendingsectioncards img {
+        width: 100px;
+        height: 150px;
+    }
+    
+    .reasonssection {
+        padding: 15px 1rem;
+        gap: 20px;
+    }
+    
+    .reasonheading {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    
+    .reasoncards {
+        gap: 15px;
+    }
+    
+    .card11, .card12, .card13, .card14 {
+        max-width: 300px;
+        min-height: 200px;
+        padding: 12px 8px;
+        gap: 10px;
+    }
+    
+    .card1 {
+        font-size: 18px;
+    }
+    
+    .card2 {
+        font-size: 12px;
+    }
+    
+    .card1img {
+        width: 50px;
+        height: 50px;
+        bottom: 3px;
+        right: 3px;
+    }
+    
+    .faqsection {
+        padding: 15px 1rem;
+        gap: 8px;
+    }
+    
+    .faqheading {
+        font-size: 16px;
+        margin-left: 3px;
+    }
+    
+    .faqcard1, .faqcard2, .faqcard3, .faqcard4, .faqcard5, .faqcard6 {
+        height: 60px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .footersection {
+        padding: 15px 1rem;
+        gap: 20px;
+    }
+    
+    .footer1 {
+        font-size: 12px;
+    }
+    
+    .footer2 {
+        gap: 10px;
+        line-height: 25px;
+    }
+    
+    .footer2 > div {
+        gap: 3px;
+    }
+    
+    .footer2 p {
+        font-size: 12px;
+    }
+    
+    .footer3 .languagebox {
+        font-size: 14px;
+        width: 120px;
+    }
+    
+    .footer4 p,
+    .footer5 p {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile Phones */
+@media (max-width: 360px) {
+    .headingsection {
+        padding: 0 0.5rem;
+    }
+    
+    .leftheadingsection img {
+        height: 45px;
+        width: 100px;
+    }
+    
+    .maincontentsectioncontainer h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .maincontentsectioncontainerpp {
+        font-size: 14px;
+    }
+    
+    .maincontentsectioncontainerppp {
+        font-size: 12px;
+    }
+    
+    .maincontentsectioninput input,
+    .maincontentsectioninput button {
+        max-width: 250px;
+        height: 35px;
+    }
+    
+    .maincontentsectioninput button {
+        font-size: 14px;
+    }
+    
+    .trendingsectioncards img {
+        width: 80px;
+        height: 120px;
+    }
+    
+    .card11, .card12, .card13, .card14 {
+        max-width: 250px;
+        min-height: 180px;
+    }
+    
+    .card1 {
+        font-size: 16px;
+    }
+    
+    .card2 {
+        font-size: 11px;
+    }
+    
+    .faqcard1, .faqcard2, .faqcard3, .faqcard4, .faqcard5, .faqcard6 {
+        height: 50px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+}
+
+/* Landscape Mobile Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .maincontentsection {
+        height: 90vh;
+        margin-top: 10px;
+    }
+    
+    .maincontentsectioncontainer {
+        height: 60%;
+    }
+    
+    .maincontentsectioncontainer h1 {
+        font-size: 32px;
         line-height: 40px;
     }
     
@@ -679,9 +1083,32 @@ body{
     }
     
     .card11, .card12, .card13, .card14 {
-        width: 100%;
-        max-width: 350px;
-        min-height: 180px;
+        min-height: 160px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .card11:hover, .card12:hover, .card13:hover, .card14:hover {
+        transform: none;
+        animation: none;
+    }
+    
+    .trendingsectioncards img:hover {
+        transform: none;
+        animation: none;
+    }
+    
+    .faqcard1:hover, .faqcard2:hover, .faqcard3:hover, 
+    .faqcard4:hover, .faqcard5:hover, .faqcard6:hover {
+        transform: none;
+        animation: none;
+    }
+    
+    .signinbutton button:hover,
+    .maincontentsectioninput button:hover {
+        transform: none;
+        animation: none;
     }
 }
 
